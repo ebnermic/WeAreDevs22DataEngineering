@@ -1,0 +1,33 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "browse",
+      "key_properties": ["id"],
+      "schema": {
+        "properties": {
+          "id": {
+            "type": ["string"]
+          },
+          "name": {
+            "type": ["null","string"]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "browse",
+      "replication_key": "updated_at",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": true,
+            "inclusion": "available"
+          },
+          "stream_id": "browse",
+          "stream_name": "browse",
+          "endpoint": "neo/browse"
+        }
+      ]
+    }
+  ]
+}

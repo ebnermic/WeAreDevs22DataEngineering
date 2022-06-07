@@ -1,0 +1,54 @@
+{
+    "type": "object",
+    "properties": {
+        "Name": {
+            "type": "object",
+            "properties": {
+                "_c": {
+                    "type": ["null", "string"]
+                }
+            }
+        },
+        "SetupDescription": {
+            "type": "object",
+            "properties": {
+                "_c": {
+                    "type": ["null", "string"]
+                }
+            }
+        },
+        "PlanDescription": {
+            "type": ["null", "object"],
+            "properties": {
+                "_c": {
+                    "type": ["null", "string"]
+                }
+            }
+        },
+        "TrialEndPolicy": {
+            "type": ["null", "string"]
+        },
+        "IsQuantityBased": {
+            "type": ["null", "boolean"]
+        },
+        "Hidden": {
+            "type": ["null", "boolean"]
+        },
+        "IsDeletable": {
+            "type": ["null", "boolean"]
+        },
+        "RequiresOrderApproval": {
+            "type": ["null", "boolean"]
+        },
+        "CustomFields": {
+            "type": "object"
+        },
+        "PlanGroupId": {
+            "type": ["null", "string"]
+        },
+        "Id": {
+            "type": ["null", "string"]
+        }
+    },
+    "additionalProperties": false
+}

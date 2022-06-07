@@ -1,0 +1,50 @@
+{
+    "type": "object",
+    "properties": {
+        "Type": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "Timestamp": {
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-type"
+        },
+        "OrderId": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "ContractId": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "ChangeDate": {
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-type"
+        },
+        "NewPlanVariantId": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "NewPlanId": {
+            "type": [
+                "null",
+                "string"
+            ]
+        }
+    },
+    "additionalProperties": false
+}

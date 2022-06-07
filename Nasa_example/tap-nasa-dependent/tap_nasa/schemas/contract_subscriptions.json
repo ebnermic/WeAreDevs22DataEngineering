@@ -1,0 +1,126 @@
+{
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+        "Id": {
+            "type": "string"
+        },
+        "_DataTimestamp": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "Phase": {
+            "type": "object",
+            "properties": {
+                "Type": {
+                    "type": "string"
+                },
+                "StartDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "PlanVariantId": {
+                    "type": "string"
+                },
+                "PlanId": {
+                    "type": "string"
+                },
+                "Quantity": {
+                    "type": "integer"
+                },
+                "InheritStartDate": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "InheritStartDate",
+                "Type"
+            ],
+            "title": "Phase"
+        },
+        "ComponentSubscriptions": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Id": {
+                        "type": "string"
+                    },
+                    "ContractId": {
+                        "type": "string"
+                    },
+                    "CustomerId": {
+                        "type": "string"
+                    },
+                    "ComponentId": {
+                        "type": "string"
+                    },
+                    "Quantity": {
+                        "type": "number"
+                    },
+                    "StartDate": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "BilledUntil": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "EndDate": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "Memo": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "ComponentId",
+                    "ContractId",
+                    "CustomerId",
+                    "Id",
+                    "StartDate"
+                ],
+                "title": "ComponentSubscription"
+            }
+        },
+        "DiscountSubscriptions": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Id": {
+                        "type": "string"
+                    },
+                    "ContractId": {
+                        "type": "string"
+                    },
+                    "CouponCode": {
+                        "type": "string"
+                    },
+                    "CouponId": {
+                        "type": "string"
+                    },
+                    "StartDate": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "DiscountId": {
+                        "type": "string"
+                    },
+                    "EndDate": {
+                        "type": "string",
+                        "format": "date-time"
+                    }
+                },
+                "required": [
+                    "ContractId",
+                    "DiscountId",
+                    "Id",
+                    "StartDate"
+                ],
+                "title": "DiscountSubscription"
+            }
+        }
+    }
+}

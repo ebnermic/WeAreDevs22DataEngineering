@@ -1,0 +1,47 @@
+{
+    "type": "object",
+    "properties": {
+        "Id": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "TimeGranularity": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "Name": {
+            "type": "object",
+            "properties": {
+                "_c": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                }
+            }
+        },
+        "Currency": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "PriceTaxType": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "TaxPolicyId": {
+            "type": [
+                "null",
+                "string"
+            ]
+        }
+    },
+    "additionalProperties": false
+}

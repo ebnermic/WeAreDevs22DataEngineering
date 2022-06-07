@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "properties": {
+    "Id": {
+      "type": ["null", "string"]
+    },
+    "Predefined": {
+      "type": ["null", "string"]
+    },
+    "Name": {
+      "type": ["null", "string"]
+    },
+    "IsMossApplicable": {
+      "type": ["null", "boolean"]
+    },
+    "SplitOnTaxChange": {
+      "type": ["null", "boolean"]
+    },
+    "ReverseChargeTaxDefinitionId": {
+      "type": ["null", "string"]
+    },
+    "Entries": {
+      "type": ["null","array"],
+      "items":
+      {
+        "type": "object",
+        "properties": {
+          "Country": {
+            "type": ["null", "string"]
+          },
+          "Rate": {
+            "type": ["null", "number"]
+          },
+          "TaxDefinitionId": {
+            "type": ["null", "string"]
+          },
+          "ValidFrom": {
+            "type": ["null", "string"]
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

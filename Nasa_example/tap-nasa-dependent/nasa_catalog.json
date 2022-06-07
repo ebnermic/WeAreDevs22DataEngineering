@@ -1,0 +1,75 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "browse",
+      "key_properties": ["id"],
+      "schema": {
+        "properties": {
+          "id": {
+            "type": ["string"]
+          },
+          "name": {
+            "type": ["null","string"]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "browse",
+      "replication_key": "updated_at",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": true,
+            "inclusion": "available"
+          },
+          "stream_id": "browse",
+          "stream_name": "browse",
+          "endpoint": "neo/browse"
+        }
+      ]
+    },
+    {
+      "tap_stream_id": "lookup",
+      "key_properties": ["id"],
+      "schema": {
+        "properties": {
+          "id": {
+            "type": ["string"]
+          },
+          "name": {
+            "type": ["null","string"]
+          },
+          "oribital_data":{
+            "type": ["object","null"],
+            "properties": {
+              "orbit_id": {
+                "type": ["string"]
+              },
+              "first_observation_date": {
+                "type": ["string"]
+              }
+            }
+          }
+        },
+        "type": "object"
+      },
+      "stream": "lookup",
+      "replication_key": "id",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected": true,
+            "inclusion": "available"
+          },
+          "stream_id": "lookup",
+          "stream_name": "lookup",
+          "endpoint": "neo/{}",
+          "dependencie": "browse",
+          "dependencie_key": "id"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,896 @@
+{
+  "type": "object",
+  "properties": {
+      "SelfServiceUrl": {
+          "type": [
+              "null",
+              "string"
+          ]
+      },
+      "PlanGroups": {
+          "type": [
+              "null",
+              "array"
+          ],
+          "items": {
+              "type": [
+                  "null",
+                  "object"
+              ],
+              "properties": {
+                  "Id": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "TimeGranularity": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "Name": {
+                      "properties": {
+                          "_c": {
+                              "type": [
+                                  "null",
+                                  "string"
+                              ]
+                          }
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "Currency": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "PriceTaxType": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "TaxPolicyId": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  }
+              }
+          }
+      },
+      "Plans": {
+          "type": [
+              "null",
+              "array"
+          ],
+          "items": {
+              "type": [
+                  "null",
+                  "object"
+              ],
+              "properties": {
+                  "Name": {
+                      "properties": {
+                          "_c": {
+                              "type": [
+                                  "null",
+                                  "string"
+                              ]
+                          }
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "SetupDescription": {
+                      "properties": {
+                          "_c": {
+                              "type": [
+                                  "null",
+                                  "string"
+                              ]
+                          }
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "PlanDescription": {
+                      "properties": {
+                          "_c": {
+                              "type": [
+                                  "null",
+                                  "string"
+                              ]
+                          }
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "TrialEndPolicy": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "IsQuantityBased": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "Hidden": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "IsDeletable": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "RequiresOrderApproval": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "CustomFields": {
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "PlanGroupId": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "Id": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  }
+              }
+          }
+      },
+      "PlanVariants": {
+          "type": [
+              "null",
+              "array"
+          ],
+          "items": {
+              "type": [
+                  "null",
+                  "object"
+              ],
+              "properties": {
+                  "Id": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "PlanId": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "EndAfterFirstContractPeriod": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "AllowSelfService": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "AllowWithoutPaymentData": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "ContractPeriod": {
+                      "properties": {
+                          "Unit": {
+                              "type": [
+                                  "null",
+                                  "string"
+                              ]
+                          },
+                          "Quantity": {
+                              "type": [
+                                  "null",
+                                  "number"
+                              ]
+                          }
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "LaterContractPeriod": {
+                      "properties": {
+                          "Unit": {
+                              "type": [
+                                  "null",
+                                  "string"
+                              ]
+                          },
+                          "Quantity": {
+                              "type": [
+                                  "null",
+                                  "number"
+                              ]
+                          }
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "CancellationPeriod": {
+                      "properties": {
+                          "Unit": {
+                              "type": [
+                                  "null",
+                                  "string"
+                              ]
+                          },
+                          "Quantity": {
+                              "type": [
+                                  "null",
+                                  "number"
+                              ]
+                          }
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "LaterCancellationPeriod": {
+                      "properties": {
+                          "Unit": {
+                              "type": [
+                                  "null",
+                                  "string"
+                              ]
+                          },
+                          "Quantity": {
+                              "type": [
+                                  "null",
+                                  "number"
+                              ]
+                          }
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "BillingPeriod": {
+                      "properties": {
+                          "Unit": {
+                              "type": [
+                                  "null",
+                                  "string"
+                              ]
+                          },
+                          "Quantity": {
+                              "type": [
+                                  "null",
+                                  "number"
+                              ]
+                          }
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "FeePeriod": {
+                      "properties": {
+                          "Unit": {
+                              "type": [
+                                  "null",
+                                  "string"
+                              ]
+                          },
+                          "Quantity": {
+                              "type": [
+                                  "null",
+                                  "number"
+                              ]
+                          }
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "PlanGroupId": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "PaymentPeriodMode": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "Quota": {
+                      "items": {
+                          "properties": {
+                              "ComponentId": {
+                                  "type": [
+                                      "null",
+                                      "string"
+                                  ]
+                              },
+                              "ComponentName": {
+                                  "type": [
+                                      "null",
+                                      "string"
+                                  ]
+                              },
+                              "Quota": {
+                                  "type": [
+                                      "null",
+                                      "string"
+                                  ]
+                              }
+                          },
+                          "type": [
+                              "null",
+                              "object"
+                          ]
+                      },
+                      "type": [
+                          "null",
+                          "array"
+                      ]
+                  },
+                  "RecurringFee": {
+                      "type": [
+                          "null",
+                          "number"
+                      ]
+                  },
+                  "SetupFee": {
+                      "type": [
+                          "null",
+                          "number"
+                      ]
+                  },
+                  "InternalName": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "Description": {
+                      "properties": {
+                          "_c": {
+                              "type": [
+                                  "null",
+                                  "string"
+                              ]
+                          }
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "BillingDateAlignment": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "ExternalId": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "Hidden": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "IsDeletable": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "AfterFirstContractPeriodNextStep": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  }
+              }
+          }
+      },
+      "Components": {
+          "type": [
+              "null",
+              "array"
+          ],
+          "items": {
+              "type": [
+                  "null",
+                  "object"
+              ],
+              "properties": {
+                  "AllowSelfService": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "ShowSelfService": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "ComponentType": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "FeePeriod": {
+                      "properties": {
+                          "Quantity": {
+                              "type": [
+                                  "null",
+                                  "number"
+                              ]
+                          },
+                          "Unit": {
+                              "type": [
+                                  "null",
+                                  "string"
+                              ]
+                          }
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "Prorate": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "Name": {
+                      "properties": {
+                          "Quantity": {}
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "Description": {
+                      "properties": {
+                          "Quantity": {}
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "TaxPolicyId": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "ExternalId": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "PricePerUnit": {
+                      "type": [
+                          "null",
+                          "number"
+                      ]
+                  },
+                  "IncludeInInterimBilling": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "BillInTrial": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "Hidden": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "IsDeletable": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "Id": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "PlanGroupId": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "PriceScale": {
+                      "properties": {
+                          "IsCumulative": {},
+                          "Items": {
+                              "items": {
+                                  "properties": {
+                                      "IsBucketPrice": {
+                                          "type": [
+                                              "null",
+                                              "boolean"
+                                          ]
+                                      },
+                                      "From": {
+                                          "type": [
+                                              "null",
+                                              "number"
+                                          ]
+                                      },
+                                      "Value": {
+                                          "type": [
+                                              "null",
+                                              "number"
+                                          ]
+                                      }
+                                  },
+                                  "type": [
+                                      "null",
+                                      "object"
+                                  ]
+                              },
+                              "type": [
+                                  "null",
+                                  "array"
+                              ]
+                          }
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  }
+              }
+          }
+      },
+      "TaxPolicies": {
+          "type": [
+              "null",
+              "array"
+          ],
+          "items": {
+              "type": [
+                  "null",
+                  "object"
+              ],
+              "properties": {
+                  "Id": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "Predefined": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "Name": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "IsMossApplicable": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "SplitOnTaxChange": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "ReverseChargeTaxDefinitionId": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "Entries": {
+                      "items": {
+                          "properties": {
+                              "Country": {
+                                  "type": [
+                                      "null",
+                                      "string"
+                                  ]
+                              },
+                              "Rate": {
+                                  "type": [
+                                      "null",
+                                      "number"
+                                  ]
+                              },
+                              "TaxDefinitionId": {
+                                  "type": [
+                                      "null",
+                                      "string"
+                                  ]
+                              },
+                              "ValidFrom": {
+                                  "type": [
+                                      "null",
+                                      "string"
+                                  ]
+                              }
+                          },
+                          "type": [
+                              "null",
+                              "object"
+                          ]
+                      },
+                      "type": [
+                          "null",
+                          "array"
+                      ]
+                  }
+              }
+          }
+      },
+      "Discounts": {
+          "type": [
+              "null",
+              "array"
+          ],
+          "items": {
+              "type": [
+                  "null",
+                  "object"
+              ],
+              "properties": {
+                  "InternalName": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "Duration": {
+                      "properties": {
+                          "Quantity": {
+                              "type": [
+                                  "null",
+                                  "number"
+                              ]
+                          },
+                          "Unit": {
+                              "type": [
+                                  "null",
+                                  "string"
+                              ]
+                          }
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "Effect": {
+                      "properties": {
+                          "ReductionPercent": {
+                              "type": [
+                                  "null",
+                                  "number"
+                              ]
+                          },
+                          "Type": {
+                              "type": [
+                                  "null",
+                                  "string"
+                              ]
+                          }
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "IncludeSetup": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "CreateSeparateLineItem": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "Hidden": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "IsDeletable": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "Id": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "PlanGroupId": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  }
+              }
+          }
+      },
+      "Coupons": {
+          "type": [
+              "null",
+              "array"
+          ],
+          "items": {
+              "type": [
+                  "null",
+                  "object"
+              ],
+              "properties": {
+                  "Id": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "PlanGroupId": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "Active": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "InternalName": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "Description": {
+                      "properties": {
+                          "_c": {
+                              "type": [
+                                  "null",
+                                  "string"
+                              ]
+                          }
+                      },
+                      "type": [
+                          "null",
+                          "object"
+                      ]
+                  },
+                  "DiscountId": {
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "ValidFrom": {
+                      "format": "date-time",
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "ValidUntil": {
+                      "format": "date-time",
+                      "type": [
+                          "null",
+                          "string"
+                      ]
+                  },
+                  "Enabled": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "IsSingleUse": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  },
+                  "Hidden": {
+                      "type": [
+                          "null",
+                          "boolean"
+                      ]
+                  }
+              }
+          }
+      },
+      "TaxDefinitions": {
+          "type": [
+              "null",
+              "array"
+          ],
+          "items": {}
+      }
+  },
+  "additionalProperties": false
+}
