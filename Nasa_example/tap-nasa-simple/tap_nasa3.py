@@ -28,14 +28,13 @@ while True:
 
     with urllib.request.urlopen(url) as response:
         nasa_neo = response.read().decode('utf-8').strip()
-        # LOGGER.fatal('Response: %s', str(nasa_neo))
         nasa_neo_json = json.loads(nasa_neo)
         
         for near_earth_object in nasa_neo_json.get('near_earth_objects'):
             singer.write_schema('nasa_neo', schema, 'id')
             singer.write_records('nasa_neo', [{'id': near_earth_object.get('id'), 'name': near_earth_object.get('name')}])
 
-        if not 'next' in nasa_neo_json.get('links'):
+        if not 'next' in nasa_neo_json.get('links') or page >= 3:
             break
     
     page += 1
