@@ -25,10 +25,16 @@ Download all files including PPT and Word on [Github](https://github.com/ebnermi
 
 ## Both
 
-### API-Key
+### API
+
+#### Key
 
 We will request data from the NASA API. Therefore, we need an API-Key.
 
 To get one, register on: https://api.nasa.gov/#signUp. Enter the needed information (dummy information works) and copy the API-Key you get on the next screen.
 
 Please keep this API Key for the Workshop.
+
+#### Example
+
+You can look into the Postman [Repository](https://app.getpostman.com/join-team?invite_code=6046cfce07e1ed326a3b079e32a19a4c&target_code=a860d61ff1e24e47dd62fdbc49a795a0) for an example using the NASA NEO API.
