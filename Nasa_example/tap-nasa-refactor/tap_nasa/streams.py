@@ -25,7 +25,7 @@ class Stream:
             for near_earth_object in near_earth_objects:
                     yield near_earth_object
             
-            # page >= 5 to test
+            # page >= 3 to test
             if not 'next' in records.get('links') or page >= 3:
                 break
             
